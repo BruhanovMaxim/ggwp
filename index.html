@@ -1,111 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>I Love JS</title>
+    <link rel="stylesheet" href="/style.css">
+    <title>Карточка студента</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="info">
-            <img src="https://forpostsevastopol.ru/wp-content/uploads/2021/01/988369a1abc925f.jpg"
-                alt="Картинка кота зимой" class="avatar">
-            <div class="info-text">
-                <h1>Котэ</h1>
-                <p>Это <strong>ЛИЧНАЯ</strong> страничка КОТЭ</p>
-                <p>Кто не подпишется тот сушенный котях!</p>
-
-                <h4>Мои контакты</h4>
-                <a href="tel:+79064444151">Phone number</a>
-                |
-                <a href="mailto:hot8max@gmail.com">E-mail</a>
-                |
-                <a href="https://ya.ru/" target="_blank">YA</a>
+    <div class="_container">
+        <header class="_headers">
+            <div class="h1head">
+                <h1>Карточка студента</h1>
             </div>
-        </div>
-
-        <div class="card bg-yellow">
-            <h2>Мои Хобби</h2>
-            <ol class="list">
-                <li>
-                    Сплю
-                </li>
-                <li>
-                    Ем
-                </li>
-                <li>
-                    Сру
-                </li>
-            </ol>
-        </div>
-
-        <div class="card bg-green">
-            <h2>Опыт работы</h2>
-            <table class="table">
-                <tr>
-                    <td>Дом</td>
-                    <td>Серун года</td>
-                    <td>2021-2021</td>
-                </tr>
-                <tr>
-                    <td>Дом</td>
-                    <td>Делаю мозги</td>
-                    <td>2021-2021</td>
-                </tr>
-                <tr>
-                    <td>Дом</td>
-                    <td>Выбешиваю</td>
-                    <td>2021-2021</td>
-                </tr>
-                <tr>
-                    <td>Дом</td>
-                    <td>Кричун</td>
-                    <td>2021-2021</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="card bg-red">
-            <h2>Мои курсы как надо вынести мозг людишкам</h2>
-            <ul class="link-list">
-                <li>
-                    <a href="https://tren-kot.ru/" target="_blank">Посмотреть список</a>
-                </li>
-            </ul>
-        </div>
-        <div class="contact">
-            <div class="card">
-                <h2>Связаться со мной</h2>
-                <form action="/">
-                    <div class="row">
-                        <div class="form-group">
-                            <label for="name">Ваше имя </label>
-                            <input type="text" id="name" placeholder="Введите ваше имя">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Ваш E-mail </label>
-                            <input type="email" id="email" placeholder="Введите ваше email">
-                        </div>
+        </header>
+        <main class="_mains">
+            <div class="mains_block">
+                <img src="https://sun9-77.userapi.com/impf/c847122/v847122012/13c206/6YP7e6O_xpw.jpg?size=665x1109&quality=96&sign=4a42ec1f6a64e08f1c444a9a04e88ba9&type=album"
+                    alt="avatar" class="mains_avatar">
+                <div class="info">
+                    <h3>Имя, фамилия:</h3>
+                    <p>Брюханов Максим</p>
+                    <h3>Возраст:</h3>
+                    <p>33 года</p>
+                    <h3>Опыт в программировании:</h3>
+                    <p>1 неделя</p>
+                    <h3>О себе:</h3>
+                    <p>Работаю в IT компании у которой есть свой программный продукт, стараюсь заниматься саморазвитием.
+                        Приложу все силы чтоб стать - front end developer </p>
+                </div>
+            </div>
+            <div class="card bg-b3">
+                <h2>Мои цели на обучение</h2>
+                <hr>
+                <ul class="list">
+                    <li>Изучить новое для себя</li>
+                    <li>Прокачать свои скилы</li>
+                    <li>Познакомиться с людьми которые движуться в напровлении IT</li>
+                    <li>Повысить благосостояние за счет новых умений</li>
+                </ul>
+            </div>
+            <div class="card bg-b3">
+                <h2>Сколько времени смогу учиться</h2>
+                <hr>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Понедельник</td>
+                            <td>1-2 ч.</td>
+                        </tr>
+                        <tr>
+                            <td>Вторник</td>
+                            <td>1-2 ч.</td>
+                        </tr>
+                        <tr>
+                            <td>Среда</td>
+                            <td>1-2 ч.</td>
+                        </tr>
+                        <tr>
+                            <td>Четверг</td>
+                            <td>1-2 ч.</td>
+                        </tr>
+                        <tr>
+                            <td>Пятница</td>
+                            <td>2-3 ч.</td>
+                        </tr>
+                        <tr>
+                            <td>Суббота</td>
+                            <td>2-4 ч.</td>
+                        </tr>
+                        <tr>
+                            <td>Воскресенье</td>
+                            <td>2-4 ч.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card bg-b3">
+                <h2>Мои пройденные курсы</h2>
+                <hr>
+                <table class="table2">
+                    <tr>
+                        <th>Название</th>
+                        <th>Автор</th>
+                        <th>Оценка курса</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=DOEtVdkKwcU">HTML</a>
+                        </td>
+                        <td>Владилен Минин</td>
+                        <td>10/10</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=SpCUuyZZTp8">CSS</a>
+                        </td>
+                        <td>Владилен Минин</td>
+                        <td>10/10</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer class="_footers">
+            <div class="card bg-b3">
+                <h2>Контакты</h2>
+                <hr>
+                <div class="link">
+                    <div class="social bg-b2"><a href="https://t.me/lifemax" target="_blank">Telegram</a></div>
+                    <div class="social bg-b2"><a href="https://www.instagram.com/life.dux/"
+                            target="_blank">Instagram</a></div>
+                    <div class="social bg-b2"><a href="https://github.com/BruhanovMaxim" target="_blank">Github</a>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Ваше сообщение </label>
-                        <textarea name="" id="message" cols="5" rows="1"></textarea>
-                    </div>
-                    <input class="btn" type="submit" value="Связаться">
-                </form>
+                </div>
             </div>
-        </div>
-        <div class="position">
-            <div class="box">
-
-            </div>
-        </div>
+        </footer>
     </div>
-
 </body>
 
 </html>

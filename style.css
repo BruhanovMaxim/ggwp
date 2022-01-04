@@ -1,191 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/* * {
-    padding: 0;
-    margin: 0;
-} */
-body {
-    background-color: #f0f0f0;
-    color: #0f141e;
-    font-size: 16px;
-    font-weight: normal;
-    font-family: 'Roboto',
-    sans-serif;
-    }
-
-    a {
-    color: black;
+body{
+   height: 100%;
+   line-height: 1;
+   font-size: 16px;
+   color: #0f141e;
+   font-family: 'Roboto Condensed',
+   sans-serif;
+   background-color: #f1f1f1;
+   box-sizing: border-box;
+}
+a{
+    color: #000;
     text-decoration: none;
-    }
-    a:hover{
-        text-decoration: underline;
-    }
-    a:active{
-        color:cornflowerblue;
-    }
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
-    .avatar{
-        width: 250px;
-        height: 160px;
-        border-radius: 15px;
-        box-shadow: 2px 5px 20px 0px rgba(0 0 0 / 50%);
-    }
-    .info{
-        display: flex;
-        margin-bottom: 20px;
-    }
-    @media (max-width: 700px) {
-        .info{
-            text-align: center;
-            display: block;
-        }
-    }
-    .info-text h4{
-        margin-bottom: 10px;
-    }
-    .info-text h1{
-        margin-top: 0px;
-        margin-bottom: 10px;
-    }
-    .info-text{
-        margin-left: 40px;
-    }
-    .info p {
-        color: #86898f;
-        margin: 0;
-        font-style: italic;
-        text-decoration: none;
+._container {
+    display: flex;
+    max-width: 750px;
+    min-height: 100%;
+    height: 100%;
+    padding: 0px 15px;
+    margin: 0px auto;
+    overflow: hidden;
+    flex-direction: column;
+}
 
-        /*text-transform: lowercase;*/
-        /*letter-spacing: 5px;*/
-        /*word-spasing: 40px;*/
-    }
-    
-    /* Box model*/
-    .container{
-        max-width: 750px;
-        margin: auto;
-        padding-top: 30px;
-    }
+/* -------------------------------[ header ]------------------------------------------- */
 
-    /* .contact {
-        background: green;
-        padding: 15px;
-        margin: 5px;
-        border: 5px solid red;
-        border-bottom-style:;
-        border-top-width: 25px;
-    }  */
+.h1head{
+    display: flex;
+    padding-bottom: 50px;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 20px;
+    justify-content: center;
+}
+/* -------------------------------[ main ]--------------------------------------------- */
+.mains_avatar{
+    width: 200px;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
+}
+.mains_block{
+    display: flex;
+    margin-bottom: 20px;
+}
+.info{
+    padding-left: 50px;
+}
+.info h3{
+    margin: 0px;
+}
+.info p {
+    margin: 10px 0px 30px 0px;
+}
 
-    .bg-yellow{
-        background: #fff9dc;
-    }
-    .bg-green {
-        background: #e5ffe7;
-    }
-    .bg-red {
-        background: #ffe5e5;
-    }
+.card{
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25);
+}
+.card h2{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.list li{
+    color: rgb(92, 92, 92);
+    margin-bottom: 10px;
+}
 
-    .card{
-        padding: 15px 20px;
-        margin-bottom: 20px;
-        border-radius: 15px;
-    }
-    .card h2 {
-        margin-bottom: 10px;
-    }
-    .list {
-        padding: 0 20px;
-        /* list-style: none; */
-    }
+.table {
+    display: flex;
+    justify-content: center;
+}
+.table td {
+    padding: 10px 30px;
+    color: rgb(92, 92, 92);
+}
+.table2{
+    margin: 0 auto;
+    width: 70%;
+}
+.table2 th{
+    padding: 20px;
+    font: bold;
+}
+.table2 td {
+    padding-bottom: 20px;
+    color: rgb(92, 92, 92);
+}
+.table2 tr{
+    text-align: center;
+}
 
-    .list li {
-        color: #86898f;
-        margin-bottom: 10px;
-    }
-    .table{
-        width: 100%;
-    }
-    .table td {
-        padding-bottom: 10px;
-    }
-    .table td:nth-child(2),
-    .table td:nth-child(2){
-        color: #86898f;
-    }
-    .link-list {
-        list-style: none;
-        padding: 0;
-    }
-    .link-list li {
-        margin-bottom: 10px;
-        padding-bottom: 5px;
-        border-bottom: 1px solid #ccc;
-    }
+.bg-b1{
+    background: linear-gradient(229.99deg, #d6fafc -1%, #88d5dd 145%);
+}
+.bg-b2{
+    background: linear-gradient(215.32deg, #ff888a -1%, #ff5f5f 124%);
+}
+.bg-b3{
+    background: linear-gradient(221.87deg, #f1f1f1 1%, #cecece 128%);
+}
+.bg-b4{
+    background: linear-gradient(220.16deg, #fdfcee -1%, #ffe5be 138%);
+}
 
-    .contact h2{
-        text-align: center;
-    }
+/* -------------------------------[ footer ]------------------------------------------- */
 
-    .form-group label{
-        display: block;
-        font-size: 14px;
-        color: #86898f;
-    }
+.link{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 30px;
+    font: inherit;
+}
 
-    .form-group input,
-    .form-group textarea
-    {
-        width: 100%;
-        box-sizing: border-box;
-        border: none;
-        background: transparent;
-        border-bottom: 1px solid #ccc;
-        color: #000;
-        padding: 15px 0 10px;
-        outline: none;
-        font-family: inherit;
-    }
+.link a{
+    text-decoration: none;
+    color: #fff;
+}
 
-    .row{
-        display: flex;
-        margin-bottom: 20px;
-    }
+.social{
+    width: 100px;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 1px rgb(128, 41, 41);
+}
 
-    .row > .form-group{
-        width: 50%;
-        margin-right: 20px;
-    }
-    .row > .form-group:last-child{
-        margin-right: 0;
-    }
+.social:hover {
+    box-shadow: 0px 2px 2px rgb(128, 41, 41);
+}
 
-    .btn {
-        color: #fff;
-        background: #111;
-        padding: 10px 15px;
-        border: none;
-        font-family: inherit;
-        cursor: pointer;
-    }
-
-    .bth:hover {
-        opacity: 0.3;
-    }
-
-    /*Position*/
-
-    .position{
-        border: 4px solid black;
-        margin-top: 40px;
-        padding: 20px;
-    }
-    .box{
-        position: fixed;
-        bottom: 50px;
-        right: 50px;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        background:lightcoral;
-    }
+._footers{
+    margin-bottom: 50px;
+}
